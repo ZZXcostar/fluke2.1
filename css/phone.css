@@ -1,0 +1,218 @@
+
+@media screen and (orientation: portrait){
+  .tip{
+    display: flex !important;
+    }
+  #content{
+    display: none !important;
+  }
+  .white_content{
+    display: none !important;
+  }
+  
+}
+
+@media screen and (orientation: landscape) {
+  .tip{
+    display: none !important;
+  }
+  #content{
+    display: block !important;
+    }
+}
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* position: relative;
+  min-width: 1280px;
+  font-size: 14px; */
+}
+/* 头部样式开始 */
+.header{
+  width: 100%;
+  background-color: rgb(5, 4, 4);
+}
+.header_left {
+  margin-left: 0.18rem;
+  height: 100%;
+}
+.header_left img{
+  height: 0.19rem;
+}
+.headerText {
+  margin-right: 0.1rem;
+  color: #fff;
+  font-size: .08rem;
+  letter-spacing: 0.005rem;
+}
+.headerHerf {
+  height: 0.13rem;
+  margin-right: .1rem;
+  color: #050404;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+/* 头部样式结束 */
+
+/* 内容区域样式开始 */
+#pageBody{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+/* 内容区域样式结束 */
+
+/* 底部样式开始 */
+.footer{
+  width: 100%;
+  z-index: 111;
+  position: relative;
+  background-color: rgb(5, 4, 4);
+}
+.footer_text{
+  font-size: .10rem;
+  height: 0.12rem;
+  line-height: 0.13rem;
+  letter-spacing: 0.005rem;
+  color: rgb(176, 176, 176);
+}
+.footer_icon{
+  width: 0.08rem;
+  margin-left: 0.05rem;
+}
+/* 底部样式结束 */
+
+/* 模态框样式开始 */
+.black_overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+
+.white_content {
+  display: none;
+  position: absolute;
+  border-radius: 20px;
+  /* top: 20%; */
+  /* left: 1.6rem; */
+  width: 4rem;
+  height: 2.2rem;
+  background-color: white;
+  z-index: 1002;
+}
+.icon_close{
+  font-size: 0.15rem;
+  position: absolute;
+  right: 0.1rem;
+  cursor: pointer;
+  top: 0.08rem;
+}
+.white_content_small {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  height: 50%;
+  /* border: 16px solid lightblue; */
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+input{
+  outline-style: none ;
+  background: #dddddd00;
+  border: none; 
+  border-radius: 3px;
+  padding: .01rem .04rem;
+  width: 70%;
+  font-size: .12rem;
+  font-family: "Microsoft soft";
+}
+.dialog h1{
+  font-size: .14rem;
+  width: 100%;
+  text-align: center;
+  margin-top: .26rem;
+  margin-bottom: .14rem;
+}
+.dialog {
+  font-size: .12rem;
+  padding: 0 5%;
+}
+.verification {
+  bottom: -0.10rem;
+  position: absolute;
+  width: 100%;
+  font-size: 0.08rem;
+  left: .1rem;
+  color: red;
+  display: none;
+}
+.dialog .inputbox{
+  font-size: 0.12rem;
+  width: 39%;
+  margin: 1.6% 2%;
+  padding: 2%;
+  padding-left: 5%;
+  float: left;
+  border-radius: 0.05rem;
+  background: #dddddd6e;
+  position: relative;
+}
+.dialog .info {
+  width: 100%;
+  overflow: hidden;
+  font-size: .08rem;
+  padding: .1rem .1rem;
+}
+.dialog .sbumit{
+  width: 40%;
+  margin: auto;
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  padding: 1.5%;
+  display: inline-block;
+  cursor: pointer;
+
+}
+.dialog .sbumitBox {
+  text-align: center;
+  padding-bottom: 3%;
+}
+/* 模态框样式结束 */
+
+.dscbottomBox {
+  width: 2.8rem;
+  opacity: 0;
+}
+.meritBox {
+  height: 0.5rem;
+}
+
+.contentText .imgText {
+  font-size: .085rem;
+  height: .01rem;
+  line-height: 0.14rem;
+}

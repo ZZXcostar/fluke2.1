@@ -1,0 +1,526 @@
+/* reset css start */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+}
+
+@supports (bottom: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+ /* 适配iphoneX iphoneXS */
+ /* @media screen and (device-width:375px) and (device-height:812px){
+   .footer {
+     margin-bottom:68px;
+   }
+ } */
+ /* 适配iphoneXR iphoneXSMax */
+ /* @media screen and (device-width:414px) and (device-height:896px){
+   .footer {
+     margin-bottom:68px;
+   }
+ } */
+/* @font-face{
+  font-family: 'robr';
+  src: url('./../static/font/RobotoSlab-Regular.ttf');
+} */
+@font-face{
+  font-family: 'fontLink';
+  src: url('./../static/fonts2.0/GBK.TTF');
+}
+body, html {
+  height: 100%;
+}
+body {
+  line-height: 1;
+  /* background-color: rgb(5, 4, 4); */
+  /* font-family: helveticaneueltpro, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue",
+    -apple-system, STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; */
+  font-family:fontLink;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fontLink{
+  font-family:fontLink;
+}
+/* .robr{
+  font-family:robr;
+} */
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+i {
+  font-style: normal;
+}
+/* reset css end */
+
+/* layout start */
+.w-100 {
+  width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+.align-start {
+  align-items: start;
+}
+.align-center {
+  align-items: center;
+}
+.align-baseline {
+  align-items: baseline;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.m-24 {
+  margin: 24px;
+}
+.mt-4 {
+  margin-top: 4px;
+}
+.mt-6 {
+  margin-top: 6px;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-9 {
+  margin-top: 9px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-12 {
+  margin-top: 12px;
+}
+.mt-14 {
+  margin-top: 14px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-18 {
+  margin-top: 18px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-22 {
+  margin-top: 22px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.mt-26 {
+  margin-top: 26px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mr-4 {
+  margin-right: 4px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-6 {
+  margin-right: 6px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.mr-9 {
+  margin-right: 9px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-11 {
+  margin-right: 11px;
+}
+.mr-12 {
+  margin-right: 12px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+.mr-18 {
+  margin-right: 18px;
+}
+.ml-24 {
+  margin-left: 24px;
+}
+.ml-32 {
+  margin-left: 32px;
+}
+.ml-40 {
+  margin-left: 40px;
+}
+.ml-60 {
+  margin-left: 60px;
+}
+.m-0-24 {
+  margin: 0 24px;
+}
+.mr-24 {
+  margin-right: 24px;
+}
+.mr-25 {
+  margin-right: 25px;
+}
+.m-16-24 {
+  margin: 16px 24px;
+}
+.p-0 {
+  padding: 0;
+}
+.p-15-0 {
+  padding: 15px 0;
+}
+.p-18-0 {
+  padding: 18px 0;
+}
+.p-24-0 {
+  padding: 24px 0;
+}
+.p-0-24 {
+  padding: 0 24px;
+}
+.p-16-24 {
+  padding: 16px 24px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.p-16 {
+  padding: 16px;
+}
+.p-18 {
+  padding: 18px;
+}
+.p-24 {
+  padding: 24px;
+}
+.pt-18 {
+  padding-top: 18px;
+}
+.pt-24 {
+  padding-top: 24px;
+}
+.pb-24 {
+  padding-bottom: 24px;
+}
+.pb-9 {
+  padding-bottom: 9px;
+}
+.pb-16 {
+  padding-bottom: 16px;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pt-0 {
+  padding-top: 0;
+}
+.clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.line-h125 {
+  line-height: 1.25;
+}
+.line-h15 {
+  line-height: 1.5;
+}
+.mask-layer {
+  background: #000000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+/* layout end */
+/* font start */
+.text-bold {
+  font-weight: bold;
+}
+.text-blue {
+  color: #3157fa;
+}
+.text-red {
+  color: #ee2040;
+}
+.text-white {
+  color: #fff;
+}
+.text-gold {
+  color: #f4d496;
+}
+.text-cd {
+  color: #cdcdcd;
+}
+.text-222 {
+  color: #222222;
+}
+.text-333 {
+  color: #333333;
+}
+.text-666 {
+  color: #666666;
+}
+.text-999 {
+  color: #999999;
+}
+.text-20 {
+  font-size: 20px;
+}
+.text-24 {
+  font-size: 24px;
+}
+.text-28 {
+  font-size: 28px;
+}
+.text-30 {
+  font-size: 30px;
+}
+.text-32 {
+  font-size: 32px;
+}
+.text-34 {
+  font-size: 34px;
+}
+.text-40 {
+  font-size: 40px;
+}
+.text-42 {
+  font-size: 42px;
+}
+.text-48 {
+  font-size: 48px;
+}
+.text-60 {
+  font-size: 60px;
+}
+.text-80 {
+  font-size: 80px;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+/* font end */
+/* icon start */
+
+
+/* icon end */
+
+
+/* button start */
+
+
+
+/* button end */
+
+
+/* alerts start */
+
+
+
+/* alerts end */
+
+
+/* form start */
+.input {
+  border: none;
+  font-size: 30px;
+}
+/* form end */
+/* other start */
+.h-72 {
+  height: 72px;
+}
+.h-88 {
+  height: 88px;
+}
+.h-96 {
+  height: 96px;
+}
+.h-128 {
+  height: 128px;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-gray {
+  background-color: #f8f8fb;
+}

@@ -1,0 +1,104 @@
+
+
+.intro{
+  animation:fade 1s infinite;
+  -webkit-animation:fade 1s infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  35% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.title_top{
+  display: flex;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+.product_dec_img1 {
+  width: 1.6rem;
+  margin-right: 0.25rem;
+}
+.product_dec_img2 {
+  width: 5.5rem;
+}
+.product_dec_img3 {
+  width: 5rem;
+  margin-top: 25px;
+}
+
+/* 底部描述文字 */
+.dscbottomBox {
+  width: 6.4rem;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+}
+.dscbottomBox .meritBox{
+   display: flex;
+   /* overflow: hidden; */
+   /* position: relative; */
+   height: 0.85rem;
+}
+.imgbox {
+   position: relative;
+   width: 0.96rem;
+  /* height: 100px; */
+}
+.dscbottomBox .meritBox li{
+  flex: 1;
+  height: 90px;
+  padding-top: 20px;
+  /* float: left; */
+  /* width: 73px; */
+}
+.meritBox li img{
+   
+   width: 0.6rem;
+   position: absolute;
+   /* height: 50px; */
+}
+.contentText{
+  min-height: 0.4rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.6rem;
+}
+.contentText .imgText{
+   width: 100%;
+   font-size: .16rem;
+   line-height: 0.27rem;
+   letter-spacing: 5px;
+   text-align: center;
+   /* font-size: 16px; */
+   color: rgb(255, 255, 255);
+   display: none;
+}
+.herfTitle {
+   text-decoration: underline;
+   cursor: pointer;
+}
